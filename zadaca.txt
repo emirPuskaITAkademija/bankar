@@ -1,0 +1,16 @@
+
+1. Zadatak
+ -> Doraditi UI...trenutni je blago je rečeno jednak užasu
+2. Zadatak
+ -> Omogućiti transfer novca sa jednog na drugi račun.
+ -> Voditii računa o tome da se sam sebi ne može prebaciti novac.
+ -> Onemogućiti na UI odabir istog from(izvorni) i to(odredišni) bankovnog računa
+ -> Onemogućiti unos teksta u JTextField a omogućiti unos brojeva
+   JTextField textField = new JTextField(10);
+   PlainDocument doc = (PlainDocument) textField.getDocument();
+   doc.setDocumentFilter(new MyNumberFilter());
+
+   MyNumberFilter treba da extends DocumentFilter
+
+   Važno...potrebno je voditi računa da se neće prebacivati samo cijeli iznosi.
+   Dakle omogućiti unos . i , osim unosa brojeva.
